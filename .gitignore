@@ -1,36 +1,61 @@
-#python
+# =========================
+# Python
+# =========================
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-*.pyc
-*.pdb
-*.egg-info/
-*.egg
 *.log
+*.sqlite3
 
-# virtualenvironment
+# Virtual Environment
 venv/
-ENV/
-env/
+.env/
+.venv/
+
+# =========================
+# Environment Variables
+# =========================
 .env
 
+# =========================
+# Data Files (Do NOT push raw/processed data)
+# =========================
+data/raw/
+data/processed/
 
-.vscode/
+# Optional: Ignore all parquet & csv files
+*.parquet
+*.csv
 
-# docker
-*.dockerfile
+# =========================
+# Docker
+# =========================
+*.tar
+*.gz
 docker-compose.override.yml
-*.swp
 
-# OS files
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS Files
+# =========================
 .DS_Store
 Thumbs.db
 
-# jupyter
+# =========================
+# Jupyter
+# =========================
 .ipynb_checkpoints/
 
-# logs/temp
+# =========================
+# Logs
+# =========================
+logs/
 *.log
-*.tmp
-*.temp
